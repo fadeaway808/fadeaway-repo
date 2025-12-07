@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, [HER NAME]! ❤️</title>
+    <title>Memories That Make Me Smile</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,30 +34,41 @@
         }
         h1 {
             color: #e91e63;
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 40px;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
         }
-        .start-button {
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        button {
             background: linear-gradient(45deg, #e91e63, #f06292);
             color: white;
             border: none;
-            padding: 20px 40px;
-            border-radius: 30px;
-            font-size: 1.5em;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1.1em;
             cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            display: inline-block;
+            margin: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .start-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(233, 30, 99, 0.5);
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
         }
         .hearts {
             position: absolute;
@@ -95,9 +106,15 @@
     </div>
     
     <div class="container">
-        <h1>Happy Birthday, MARWATYYYYY! 🎉❤️</h1>
-        <p>Distance makhlatnich nsiftlk chi cadeau ms wjedtlik hadi wakha machi haja kbira i wish anaha t3jbeek  🫶🏼🫶 🫶🏼🫶🏼🏼</p>
-        <a href="apology.html" class="start-button">Cliquer hnaa bach tbday</a>
+        <h1>My best Photos of You 😍😍</h1>
+        <div class="gallery">
+            <img src="[HER PHOTO 1 URL]" alt="Photo 1">
+            <img src="[HER PHOTO 2 URL]" alt="Photo 2">
+            <img src="[HER PHOTO 3 URL]" alt="Photo 3">
+            <!-- Add more as needed -->
+        </div>
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+        <button onclick="window.location.href='letter.html'">Next</button>
     </div>
 </body>
 </html>
