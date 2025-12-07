@@ -41,7 +41,7 @@
         .video-wrapper {
             position: relative;
             width: 100%;
-            max-width: 560px;
+            max-width: 400px;
             margin: 20px auto;
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
@@ -53,6 +53,13 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+        video {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         button {
             background: linear-gradient(45deg, #e91e63, #f06292);
@@ -89,6 +96,9 @@
                 font-size: 1em;
             }
             .video-wrapper {
+                max-width: 100%;
+            }
+            video {
                 max-width: 100%;
             }
             button {
@@ -156,9 +166,16 @@
     <div class="container">
         <h1>Something Special I Made for You</h1>
         <p>Dert have video liik chofiiih w kantmnaa y3jbeek</p>
+        <video controls>
+            <source src="media/IMG_5257.MOV" type="video/quicktime">
+            <source src="media/IMG_5257.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Alternative: If you want to use YouTube/Vimeo embed instead, replace the video tag above with:
         <div class="video-wrapper">
-            <iframe src="[YOUR VIDEO EMBED LINK, e.g., from YouTube or Vimeo]" frameborder="0" allowfullscreen></iframe>
+            <iframe src="[YOUR YOUTUBE/VIMEO EMBED URL]" frameborder="0" allowfullscreen></iframe>
         </div>
+        -->
         <p></p>
         <button onclick="window.location.href='index.html'">Back to Home</button>
         <button onclick="window.location.href='photos.html'">Next</button>

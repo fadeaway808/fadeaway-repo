@@ -46,15 +46,19 @@
             gap: 10px;
         }
         .gallery img {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
             margin: 10px;
             border-radius: 10px;
             transition: transform 0.3s;
+            cursor: pointer;
         }
         .gallery img:hover {
             transform: scale(1.05);
+        }
+        .gallery img:active {
+            transform: scale(0.95);
         }
         button {
             background: linear-gradient(45deg, #e91e63, #f06292);
@@ -95,6 +99,7 @@
                 height: auto;
                 aspect-ratio: 1;
                 margin: 5px;
+                min-width: 150px;
             }
             button {
                 padding: 10px 20px;
@@ -162,10 +167,11 @@
     <div class="container">
         <h1>My best Photos of You 😍😍</h1>
         <div class="gallery">
-            <img src="[HER PHOTO 1 URL]" alt="Photo 1">
-            <img src="[HER PHOTO 2 URL]" alt="Photo 2">
-            <img src="[HER PHOTO 3 URL]" alt="Photo 3">
-            <!-- Add more as needed -->
+            <img src="media/IMG_4745.JPG" alt="Photo 1">
+            <img src="media/IMG_5106.JPG" alt="Photo 2">
+            <img src="media/IMG_5178.JPG" alt="Photo 3">
+            <img src="media/IMG_5249.JPG" alt="Photo 4">
+            <!-- Add more photos by adding them to the media/ folder and referencing them here -->
         </div>
         <button onclick="window.location.href='index.html'">Back to Home</button>
         <button onclick="window.location.href='letter.html'">Next</button>
